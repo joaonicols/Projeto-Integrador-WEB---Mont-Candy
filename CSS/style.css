@@ -1,3 +1,57 @@
-*{
-    background-color: #FCEFF6;
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    background-color: #FDDDE6;
+    font-family: "Chewy";
+}
+
+.header-nv {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7A6B9;
+
+}
+
+.header-nv div {
+    display: flex;
+    margin-right: 15px;
+}
+
+.header-nv img {
+    border-radius: 100px;
+    width: 75px;
+    height: 75px;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #F7A6B9;
+}
+
+li {
+    background-color: #F7A6B9;
+}
+
+/* MAIN */
+
+/* SECTIONS */
+.carretel-imagens{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carretel-imagens img{
+    height: 600px;
+    width: 600px;
 }
