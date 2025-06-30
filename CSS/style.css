@@ -8,7 +8,7 @@
     list-style-type: none;
     color: black;
     background-color: #FDDDE6;
-    font-family: "Chewy";
+    font-family: "Chewy", sans-serif;
 }
 
 .header-nv {
@@ -46,12 +46,55 @@ li {
 /* MAIN */
 
 /* SECTIONS */
+
+/* Carretel */
+.carretel{
+  overflow: hidden;
+  width: 100%;
+}
+
 .carretel-imagens{
     display: flex;
-    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
 }
 
 .carretel-imagens img{
-    height: 600px;
-    width: 600px;
+    height: auto;
+    width: 300px;
+    flex-shrink: 0;
+}
+
+/* bem-vindos */
+.bemvindos-section{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    top: 100px;
+}
+
+.bemvindos-section-montycand{
+    display: flex;
+    flex-direction: column;
+    font-size: 75px;
+    margin-left: 95px;
+}
+
+.bemvindos-section-candy{
+    color: #F7A6B9;
+    margin-left: 55px;
+}
+
+.bemvindos-section-monty{
+    color: #5C3A2E;
+}
+
+.brigadeiro-bemvindo{
+    width: 350px;
+    height: 350px;
+    border-radius: 100px;
+    margin-left: 0;
 }
