@@ -5,16 +5,13 @@ function toggleHeart(element) {
     if (element.classList.contains('active')) {
         heartIcon.classList.remove('fa-regular');
         heartIcon.classList.add('fa-solid');
-        // Salva no localStorage para lembrar os favoritos
         localStorage.setItem(element.parentElement.querySelector('img').alt, 'favorito');
     } else {
         heartIcon.classList.remove('fa-solid');
         heartIcon.classList.add('fa-regular');
-        // Remove do localStorage
         localStorage.removeItem(element.parentElement.querySelector('img').alt);
     }
 }
-// Verifica localStorage ao carregar a página para mostrar corações já selecionados
 document.addEventListener('DOMContentLoaded', function () {
     const hearts = document.querySelectorAll('.heart-container');
     hearts.forEach(heart => {

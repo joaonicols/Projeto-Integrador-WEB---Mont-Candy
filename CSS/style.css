@@ -10,6 +10,10 @@
     font-family: "Chewy", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #ffffff;
 }
@@ -53,10 +57,14 @@ body {
 
 
 .header-nv {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #dfb0bc;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-
+    overflow: hidden;
     background-color: #dfb0bc;
 }
 
@@ -67,13 +75,14 @@ body {
     height: 75px;
     margin-left: 15px;
 }
+/* *******************************************PARTE FINAL DO HEADER********************************************************* */
 
-/* MAIN */
 
 
-/* main-principal */
+
+/* *******************************************PARTE DA MAIN PRINCIPAL********************************************************* */
 .main-principal {
-    background-image: url('/imagens/brigadeiro\ 4.jfif');
+    background-image: url('/imagens/doces\ do\ titulo.jfif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,16 +92,8 @@ body {
     align-items: center;
     position: relative;
 
-    /* width: 100%;
-    height: 600px;
-    padding: 10px 0; */
-}
-
-.titulo-monty-candy {
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    padding: 10px 0;
 }
 
 .imagem-logo-teste {
@@ -104,19 +105,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 75px;
     z-index: 10;
     background: rgba(253, 221, 230, 0.7);
     border: 1px solid #FDDDE6;
     padding: 50px;
     border-radius: 10px;
+    width: 100%;
+    height: 438px;
+
 }
 
-
-/* ********************************************************************************************************************* */
-
-
-/* TESTE DA IMAGEM NO TOPO */
 .teste {
     display: flex;
     justify-content: center;
@@ -125,52 +123,16 @@ body {
     overflow: visible;
 }
 
-.imagem-teste {
-    display: flex;
-}
 
-.imagem-logo-teste {
-    width: 100%;
-    height: 438px;
-}
-
-.titulo-monty-candy {
-    margin-top: -2%;
-    left: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 75px;
-    z-index: 10;
-    background: rgba(253, 221, 230, 0.7);
-    border: 1px solid #FDDDE6;
-    padding: 50px;
-    border-radius: 10px;
-}
+/* *******************************************PARTE FINAL DA MAIN PRINCIPAL********************************************************* */
 
 
-.bemvindos-section-candy-- {
-    color: #F7A6B9;
-    margin-left: 55px;
-}
 
-.bemvindos-section-monty-- {
-    color: #5C3A2E;
-}
-
-.brigadeiro-bemvindo-- {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    margin-top: 10px;
-}
-
-/* **************************************************************************************************** */
 
 /* ********************************************************************PARTE DA GALERIA************************** */
 
 .galeria {
-    padding: 6vw;
+    padding: 8vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,23 +227,21 @@ body {
     }
 }
 
-
-
 @keyframes slide {
     0% {
         transform: translateX(0);
     }
 
     25% {
-        transform: translateX(-7.555%);
+        transform: translateX(-5%);
     }
 
     50% {
-        transform: translateX(-15%);
+        transform: translateX(-20%);
     }
 
     75% {
-        transform: translateX(-30%);
+        transform: translateX(-33%);
     }
 
     100% {
@@ -289,22 +249,17 @@ body {
     }
 }
 
-
-
 /* ************************************************************************PARTE FINAL DA GALERIA******************** */
 
 
 
 
 
-
-
-
-
+/* ************************************************************************PARTE SOBRE MIM******************** */
 /* Sobre mim */
 .sobre-mim {
     background-color: #5C3A2E;
-    padding: 55px;
+    padding: 200px;
     display: flex;
     align-items: center;
 }
@@ -322,7 +277,6 @@ body {
     text-align: justify;
     margin-right: 15px;
     background-color: #5C3A2E;
-
 }
 
 .foto-sobremim {
@@ -334,11 +288,39 @@ body {
     height: 550px;
 }
 
+/* *******************************************PARTE FINAL SOBRE MIM********************************************************* */
 
-/* Feedbacks */
-/* .feedbacks{
-    padding: 85px 0;
-} */
+
+
+
+/* ********************************************************************PARTE DE CONTATOS************************** */
+
+
+.contatos-sectionsprincipal{
+    padding: 420px;
+    background-color: #a0522d;
+    display: flex;
+}
+
+
+
+/* ********************************************************************FINAL PARTE DE CONTATOS************************** */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #dfb0bc;
+}
+
+.section-nav-footer{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+
+/* ************************************************************************PARTE RESPONSIVIDADE******************** */
 
 @media only screen and (max-width: 600px) {
 
@@ -367,7 +349,52 @@ body {
     }
 
     /* MAIN */
+     /* main-principal */
+     .main-principal {
+        height: auto;
+        padding: 20px 10px;
+        flex-direction: column;
+    }
 
+    .imagem-logo-teste {
+        padding: 20px;
+        height: 100px;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .imagem-logo-teste img{
+        width: 220px;
+        height: 125px;
+    }
+
+    .teste {
+        flex-direction: column;
+    }
+    /* parte sobre mim */
+    
+    .sobre-mim {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .resumo-sobremim {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .resumo-sobremim h1 {
+        font-size: 28px;
+    }
+
+    .foto-sobremim {
+        margin: 15px 0;
+    }
+
+    .foto-sobremim img {
+        max-width: 100%;
+        height: 255px;
+    }
 
     /* PARTE DA GALERIA */
     .galeria {
