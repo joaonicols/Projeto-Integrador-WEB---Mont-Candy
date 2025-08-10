@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/facaseupedido.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Faça seu pedido - MontyCandy</title>
+  </head>
+  <body>
+
+    <header  class="header-nv">
+      <img src="/imagens/Mídia (3).jfif" alt="Logo" />
+
+      <button class="menu" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav-header" id="menu">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Faça seu pedido</a></li>
+          <li><a href="#">Sobre Mim</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <h1> Faça seu pedido </h1>  
+    <main>
+        <section class="sec-forms">
+            <div class="fomularios">
+                <label for="">Nome:<span class="campo-obrigatorio">*</span></label>
+                <input type="text" placeholder="Digite seu nome">
+            </div>
+            <div class="fomularios">
+                <label for="">Telefone:<span class="campo-obrigatorio">*</span></label>
+                <input type="tel" placeholder="Digite seu Numero de WhatsApp" maxlength="11">
+            </div>
+            </div>
+            <div class="fomularios">
+                <label for="">Data:<span class="campo-obrigatorio">*</span></label>
+                <input type="date" placeholder="Selecione o dia que adoraria receber seus doces">
+            </div>
+            <div class="fomularios">
+                <label for="">Fale mais sobre o seu pedido:<span class="campo-obrigatorio">*</span></label>
+                <textarea type="text" placeholder="Digite seu Pedido"></textarea>
+            </div>
+            <button> enviar Mensagem </button>
+        </section>
+
+        <section class="sec-whats">
+            <h2> Caso queira uma maneira mais rápida de resposta nos mande um menagem pelo WhatsApp</h2>
+            <i class="fa-brands fa-whatsapp" style="color: #00ff11;"></i>
+        </section>
+    </main>
+
+
+  </body>
+</html>
