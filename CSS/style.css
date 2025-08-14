@@ -100,7 +100,6 @@ body {
 .imagem-logo-teste {
     width: 100%;
     height: auto;
-    border-radius: 20px;
     margin-top: -2%;
     left: 5%;
     display: flex;
@@ -110,7 +109,7 @@ body {
     background: rgba(253, 221, 230, 0.7);
     border: 1px solid #FDDDE6;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 96px;
     width: 100%;
     height: 438px;
 
@@ -195,7 +194,6 @@ body {
 
 .heart-container {
     pointer-events: auto;
-    /* Permite clicar no coração */
 }
 
 .heart {
@@ -304,6 +302,31 @@ body {
     padding: 420px;
     background-color: #a0522d;
     display: flex;
+}
+
+.instagram-btn{
+    background: linear-gradient(45deg, 
+  rgb(131, 58, 180), 
+  rgb(193, 53, 132), 
+  rgb(225, 48, 108), 
+  rgb(253, 29, 29), 
+  rgb(245, 96, 64), 
+  rgb(252, 175, 69));
+
+  display: flex;
+  margin: 5px;
+  padding: 55px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-family:  Roboto;
+  flex-direction: column;  
+  gap: 15px;
+  cursor: pointer;
+}
+
+.instagram-btn:hover{
+    
 }
 
 
