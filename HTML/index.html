@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Mont Candy</title>
 </head>
 
@@ -19,7 +20,6 @@
         <nav class="nav-header" id="menu">
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Faça seu pedido</a></li>
                 <li><a href="#sobre-mim">Sobre Mim</a></li>
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contatos">Contatos</a></li>
@@ -38,122 +38,178 @@
         </section>
 
         <section class="sobre-mim" id="sobre-mim">
-            <section class="foto-sobremim">
-                <img src="/imagens/foto da dona.jfif" alt="">
-            </section>
-
-            <div class="resumo-sobremim">
-                <h1>Olá pessoal!!</h1>
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere voluptate eum unde, exercitationem
-                    ratio
-                    ne ut temporibus! Eius tempore id, commodi, adipisci eveniet nesciunt officia vel ratione rem nobis,
-                    culpa magnam?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere voluptate eum unde, exercitationem
-                    ratio
-                    ne ut temporibus! Eius tempore id, commodi, adipisci eveniet nesciunt officia vel ratione rem nobis,
-                    culpa magnam?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere voluptate eum unde, exercitationem
-                    ratio
-                    ne ut temporibus! Eius tempore id, commodi, adipisci eveniet nesciunt officia vel ratione rem nobis,
-                    culpa magnam?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere voluptate eum unde, exercitationem
-                    ratio
-                    ne ut temporibus! Eius tempore id, commodi, adipisci eveniet nesciunt officia vel ratione rem nobis,
-                    culpa magnam?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere voluptate eum unde, exercitationem
-                    ratio
-                    ne ut temporibus! Eius tempore id, commodi, adipisci eveniet nesciunt officia vel ratione rem nobis,
-                    culpa magnam?
-                </p>
+        <section class="section-pattern rounded-3xl p-8 md:p-12 max-w-6xl w-full floating-shadow">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-['Chewy']">Minha Jornanda com os Doces</h2>
+            <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <img src="/imagens/foto da dona.jfif" alt="Confeiteira profissional em cozinha moderna preparando doces gourmet com ingredientes premium" class="rounded-2xl floating-shadow">
             </div>
+            
+            <div>
+                <h3 class="text-2x1 font-bold text-gray-800 mb-6 font-['Playfair_Display']">Da Tradição à Inovação</h3>
+                <p class="text-gray-600 mb-6">
+                    Cada doce que crio carrega a herança das receitas de família que aprendi com minha avó, 
+                    combinada com técnicas modernas de confeitaria francesa. Minha missão é transformar 
+                    ingredientes simples em experiências gustativas memoráveis.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fa-solid fa-candy-cane text-pink-600"></i>
+                        </div>
+                        <h4 class="font-semibold text-sm">Ingredientes Frescos</h4>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-hand-holding-heart text-pink-600"></i>
+                        </div>
+                        <h4 class="font-semibold text-sm">Artesanal</h4>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-award text-pink-600"></i>
+                        </div>
+                        <h4 class="font-semibold text-sm">Qualidade Premium</h4>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-smile text-pink-600"></i>
+                        </div>
+                        <h4 class="font-semibold text-sm">Satisfação</h4>
+                    </div>
+                </div>
+                
+                <blockquote class="border-l-4 border-pink-600 pl-4 italic text-gray-600 mb-6">
+                    "A verdadeira doçura está na paixão com que cada criação é feita"
+                </blockquote>
+                
+            </div>
+        </div>
+    </section>
         </section>
 
         <!-- ------------------------ PARTE DA GALERIA --------------------------------------------- -->
 
-        <section class="galeria" id="galeria">
+        <section class="galeria" id="galeria"> 
 
             <h2 class="galeria-escrita"> Galeria</h2>
-
-            <section class="slideshow">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="/imagens/Brigadeiros 1.jfif" alt="">
-                        <div class="overlay">
-                            <div class="heart-container">
-                                <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
-                            </div>
-                        </div>
+<section class="section-pattern rounded-3xl p-8 md:p-12 max-w-9xl w-full floating-shadow">
+    
+    <section class="slideshow">
+        <div class="slides">
+            <div class="slide">
+                <img src="/imagens/Brigadeiros 1.jfif" alt="">
+                <div class="overlay">
+                    <div class="heart-container">
+                        <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
                     </div>
-
-                    <div class="slide">
-                        <img src="/imagens/Brigadeiros 2.jfif" alt="">
-                        <div class="overlay">
-                            <div class="heart-container">
-                                <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <img src="/imagens/brigadeiro 3.jfif" alt="">
-                        <div class="overlay">
-                            <div class="heart-container">
-                                <div class="heart-container">
-                                    <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <img src="/imagens/brigadeiro 4.jfif" alt="">
-                        <div class="overlay">
-                            <div class="heart-container">
-                                <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <img src="/imagens/brigadeiro 5.jfif" alt="">
-                        <div class="overlay">
-                            <div class="heart-container">
-                                <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <img src="/imagens/brigadeiro 6.jfif" alt="">
-                        <div class="overlay">
-                            <div class="heart-container">
-                                <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <img src="/imagens/brigadeiro 7.jfif" alt="">
-                        <div class="overlay">
-                            <div class="heart-container">
-                                <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </section>
+            </div>
+            
+            <div class="slide">
+                <img src="/imagens/Brigadeiros 2.jfif" alt="">
+                <div class="overlay">
+                    <div class="heart-container">
+                        <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="/imagens/brigadeiro 3.jfif" alt="">
+                <div class="overlay">
+                    <div class="heart-container">
+                        <div class="heart-container">
+                            <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="/imagens/brigadeiro 4.jfif" alt="">
+                <div class="overlay">
+                    <div class="heart-container">
+                        <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="/imagens/brigadeiro 5.jfif" alt="">
+                <div class="overlay">
+                    <div class="heart-container">
+                        <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="/imagens/brigadeiro 6.jfif" alt="">
+                <div class="overlay">
+                    <div class="heart-container">
+                        <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="/imagens/brigadeiro 7.jfif" alt="">
+                <div class="overlay">
+                    <div class="heart-container">
+                        <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/imagens/brigadeiros 8.jpg" alt="">
+                <div class="overlay">
+                    <div class="heart-container">
+                        <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/imagens/brigadeiro 9.jpg" alt="">
+                <div class="overlay">
+                    <div class="heart-container">
+                        <i class="fas fa-heart heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</section>
+
+    <section class="grid grid-cols-2 gap-12 m-8">
+        <section class="section-galerias">
+            <img class="w-full h-48 object-cover rounded-lg" src="/imagens/brigadeiro 6.jfif" alt="">
         </section>
+    <!-- <div id="card" class="bg-white shadow-lg rounded-lg overflow-hidden w-80 cursor-pointer hover:shadow-2xl transition-shadow duration-300">
+        <div class="p-4">
+            <img src="" alt="" class="w-full h-48 object-cover rounded-lg" />
+            <h2 class="mt-4 text-xl font-bold text-gray-800">Belíssima Vista da Montanha</h2>
+            <p class="text-gray-600 mt-2">Uma paisagem impressionante no outono.</p>
+        </div>
+    </div> -->
 
-        <!-- ------------------------ PARTE FINAL DA GALERIA --------------------------------------------- -->
+    </section>
+</section>
+<!-- ------------------------ PARTE FINAL DA GALERIA --------------------------------------------- -->
 
 
+
+<!-- ------------------------ PARTE CONTATOS --------------------------------------------- -->
+<section class="contatos-sectionsprincipal" id="contatos">
+    <form action="">
         
-        <!-- ------------------------ PARTE CONTATOS --------------------------------------------- -->
-        <section class="contatos-sectionsprincipal" id="contatos">
-            <form action="">
-                
-                
+        
 
             </form>
             <section class="contatos-instagram">
@@ -167,32 +223,28 @@
         
     </main>
 
-
+   <!-- ------------------------------------ FOOTER ------------------------------------------------------------------------------ -->
     <footer>
+        <div class="footer-container">
+            <section class="footer-logo">
+                <img class="img-footer" src="/imagens/Mídia (3).jfif" alt="Logo">
+            </section>
 
-        <section>
-            <img src="/imagens/Mídia (3).jfif" alt="Logo">
-        </section>
+            <section class="section-nav-footer">
+                <nav class="footer-menu">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#sobre-mim">Sobre Mim</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+                </nav>  
+            </section>
 
-        <section class="section-nav-footer">
-            <nav class="nav-footer" id="menu">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Faça seu pedido</a></li>
-                    <li><a href="#sobre-mim">Sobre Mim</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#contatos">Contatos</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section>
-            <strong>Encontre-nos</strong>
-            <p>WhatsApp: <a href="https://wa.me/5511987654321" target="_blank">(11) 98765-4321</a></p>
-            <p>Email: <a href="mailto:contato@petlife.com">contato@petlife.com</a></p>
-            <p></p>
-        </section>
-
+            <section class="footer-bottom">
+                <p>&copy; 2025 Mont Candy. Todos os direitos reservados.</p>
+            </section>
+        </div>
     </footer>
 </body>
 
