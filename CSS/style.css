@@ -146,7 +146,7 @@ body {
 
 .slides {
   display: flex;
-  width: 150%;
+  width: 165%;
   height: 100%;
   animation: slide 15s infinite;
 }
@@ -231,7 +231,7 @@ body {
   }
 
   75% {
-    transform: translateX(-33%);
+    transform: translateX(-38.9%);
   }
 
   100% {
@@ -244,12 +244,21 @@ body {
   width: 320px;
   height: 375px;
   display: flex;
-  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 2px 8px 9px rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  gap: 45px;  
+  text-align: justify;
+}
+
+.section-galerias-text{
+  margin-left: 15px;
 }
 
 .section-galerias img{
-  width: 200px;
-  height: 150px;
+  width: 320px;
+  height: 170px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 /* ************************************************************************PARTE FINAL DA GALERIA******************** */
@@ -332,17 +341,18 @@ body {
   flex-direction: column;
   gap: 15px;
   cursor: pointer;
+   box-shadow: 0px 8px 10px rgba(255, 255, 255, 0.747);
 }
 
 .instagram-btn:hover {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.664);
 }
 
 /* *********************************************************   FOOTER  ************************** */
 
 footer {
-  background-color: #f4a7b9;  
-  color: #fff;
+  background-color: #ffffff;  
+  color: #000000;
   padding: 20px 40px;
   width: 100%;              
 }
@@ -373,13 +383,13 @@ footer {
 
 .footer-menu a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .footer-menu a:hover {
-  color: rgb(92, 56, 40); /* muda a cor ao passar o mouse */
+  color: #dfb0bc;
 }
 
 /* DIREITOS AUTORAIS */
@@ -388,7 +398,7 @@ footer {
   text-align: center;
   margin-top: 15px;
   font-size: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 132, 194, 0.692);
   padding-top: 10px;
 }
 
