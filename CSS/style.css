@@ -239,7 +239,7 @@ body {
   }
 }
 
-.section-galerias{
+.section-galerias {
   background: linear-gradient(115deg, #dfb0bc 5%, #fffafa 100%);
   width: 320px;
   height: 375px;
@@ -247,18 +247,22 @@ body {
   border-radius: 15px;
   box-shadow: 2px 8px 9px rgba(0, 0, 0, 0.4);
   flex-direction: column;
-  gap: 45px;  
+  gap: 45px;
   text-align: justify;
 }
 
-.section-galerias-text{
+.section-galerias-text {
   margin-left: 15px;
 }
 
-.section-galerias img{
+.section-galerias img {
   width: 320px;
   height: 170px;
   border-radius: 15px 15px 0px 0px;
+}
+
+.section-galerias-geral{
+  display: grid;
 }
 
 /* ************************************************************************PARTE FINAL DA GALERIA******************** */
@@ -315,9 +319,27 @@ body {
 /* ********************************************************************PARTE DE CONTATOS************************** */
 
 .contatos-sectionsprincipal {
-  padding: 420px;
+  padding: 300px;
   background-color: #dfb0bc;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-pattern-contatos{
+  display: flex;
+  background: linear-gradient(135deg, #ffffff 0%, #fffafa 100%);
+  justify-content: center;
+}
+
+.sect-contatos{
+  display: flex;
+  gap: 75px;
+}
+
+.sect-contatos img{
+  width: 500px;
+  height: 600px;
 }
 
 .instagram-btn {
@@ -341,20 +363,86 @@ body {
   flex-direction: column;
   gap: 15px;
   cursor: pointer;
-   box-shadow: 0px 8px 10px rgba(255, 255, 255, 0.747);
+  transition: transform 0.9s ease-in-out;
 }
 
 .instagram-btn:hover {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.664);
+  transform: scale(1.2);
+  transition: 2s;
+}
+
+.instagram-btn:active {
+  transform: scale(1);
+}
+
+.whatsapp-btn {
+  background-color: #189100;
+  display: flex;
+  margin: 5px;
+  padding: 55px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-family: Roboto;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.9s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.664);
+  transform: scale(1.2);
+  transition: 2s;
+}
+
+.whatsapp-btn:active {
+  transform: scale(1.1);
+}
+
+.whatsapp-btn i {
+  color: white;
+}
+
+.tiktok-btn {
+  background: linear-gradient(45deg, #ee1d52, #010101, #69c9d0);
+  display: flex;
+  margin: 5px;
+  padding: 55px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-family: Roboto;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.9s ease-in-out;
+}
+
+.tiktok-btn:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.664);
+  transform: scale(1.2);
+  transition: 2s;
+}
+
+.tiktok-btn:active {
+  transform: scale(1.1);
+}
+
+.tiktok-btn i {
+  color: white;
 }
 
 /* *********************************************************   FOOTER  ************************** */
 
 footer {
-  background-color: #ffffff;  
+  background-color: #ffffff;
   color: #000000;
   padding: 20px 40px;
-  width: 100%;              
+  width: 100%;
 }
 
 .footer-container {
@@ -362,13 +450,13 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1200px;        
-  margin: 0 auto;             
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* LOGO */
 .footer-logo img {
-  width: 120px;     
+  width: 120px;
   border-radius: 8px;
 }
 
@@ -377,8 +465,8 @@ footer {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;       
-  gap: 20px;             
+  display: flex;
+  gap: 20px;
 }
 
 .footer-menu a {
@@ -405,6 +493,15 @@ footer {
 /* ************************************************************************PARTE RESPONSIVIDADE******************** */
 
 @media only screen and (max-width: 600px) {
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
   /* HEADER */
   .nav-header {
     display: none;
@@ -490,26 +587,39 @@ footer {
     font-size: 2rem;
   }
 
+  .section-galerias-geral{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-pattern-contatos{
+    flex-direction: column;
+  }
+
+
+  .contatos-sectionsprincipal{
+    padding: 60px 20px;
+  }
+
   /* FOOTER */
   @media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column; 
-    text-align: center;
-  }
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
 
-  .footer-logo img {
-    margin-bottom: 15px;
-  }
+    .footer-logo img {
+      margin-bottom: 15px;
+    }
 
-  .footer-menu ul {
-    flex-direction: column;   
-    gap: 10px;
-    margin-bottom: 15px;
-  }
+    .footer-menu ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
 
-  .footer-bottom {
-    font-size: 12px;      
+    .footer-bottom {
+      font-size: 12px;
+    }
   }
-}
-
 }
