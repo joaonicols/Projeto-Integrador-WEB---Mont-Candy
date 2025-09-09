@@ -319,7 +319,7 @@ body {
 /* ********************************************************************PARTE DE CONTATOS************************** */
 
 .contatos-sectionsprincipal {
-  padding: 300px;
+  padding: 280px;
   background-color: #dfb0bc;
   display: flex;
   justify-content: center;
@@ -335,6 +335,13 @@ body {
 .sect-contatos{
   display: flex;
   gap: 75px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sect-contatos h1{
+  font-size: 55px;
+  font-family: "Chewy";
 }
 
 .sect-contatos img{
@@ -505,12 +512,13 @@ footer {
   /* HEADER */
   .nav-header {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 0;
     margin-top: 25px;
     background-color: var(--fundo-geral);
     width: 100%;
+    padding: 10px 20px;
   }
 
   .header-nv img {
@@ -524,6 +532,10 @@ footer {
   .menu {
     display: block;
   }
+
+    .nav-header.active {
+      display: flex;
+    }  
 
   /* MAIN */
   /* main-principal */
@@ -583,6 +595,33 @@ footer {
     height: 35vh;
   }
 
+  .slides{
+    width: 150vh;
+    height: 300px;
+  }
+
+  @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5%);
+  }
+
+  60% {
+    transform: translateX(-50%);
+  }
+
+  85% {
+    transform: translateX(-76%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
   .heart {
     font-size: 2rem;
   }
@@ -601,6 +640,19 @@ footer {
     padding: 60px 20px;
   }
 
+  .whatsapp-btn{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .instagram-btn{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
   /* FOOTER */
   @media (max-width: 600px) {
     .footer-container {
